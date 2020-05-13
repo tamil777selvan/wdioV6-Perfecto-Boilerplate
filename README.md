@@ -17,7 +17,7 @@ Boilerplate project to run WebdriverIO tests in Perfecto Cloud ([https://www.per
 
 ## Running end-to-end tests
 
-- Clone the git repo — git clone `https://github.com/webdriverio/appium-boilerplate.git`.
+- Clone the git repo — git clone `https://github.com/tamil777selvan/wdioV6-Perfecto-Boilerplate.git`.
 
 - Install dependencies with `npm i`.
 
