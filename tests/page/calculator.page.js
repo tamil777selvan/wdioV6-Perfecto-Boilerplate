@@ -17,9 +17,13 @@ class CalculatorPage {
         $(this.screenObjects.clear).click();
 
         //add numbers
-        $(this.screenObjects.number(num1)).click();
+        for(let i=0; i< num1.length; i++) {
+            $(this.screenObjects.number(num1.charAt(i))).click();
+        }
         $(this.screenObjects.add).click();
-        $(this.screenObjects.number(num2)).click();
+        for(let j=0; j< num2.length; j++) {
+            $(this.screenObjects.number(num2.charAt(j))).click();
+        }
 
         //Equals
         $(this.screenObjects.equal).click();
