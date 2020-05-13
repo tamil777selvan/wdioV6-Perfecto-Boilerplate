@@ -6,7 +6,7 @@ exports.config = {
     //
     // WebdriverIO allows it to run your tests in arbitrary locations (e.g. locally or
     // on a remote machine).
-    // runner: 'local',
+    runner: 'local',
     //
     // =====================
     // Server Configurations
@@ -45,7 +45,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './tests/features/calcTests.feature'
+        './tests/features/calcTest.feature'
     ],
     // Patterns to exclude.
     exclude: [
