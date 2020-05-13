@@ -23,9 +23,6 @@
   },
   "dependencies": {
     "chai": "^4.2.0",
-    "cucumber": "^6.0.5",
-    "fs": "0.0.1-security",
-    "lodash": "^4.17.15",
-    "path": "^0.12.7"
+    "cucumber": "^6.0.5"
   }
 }
