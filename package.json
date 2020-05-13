@@ -1,0 +1,31 @@
+{
+  "name": "webdriverio-v6-cucumber-perfecto-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate project to run WebdriverIO tests in Perfecto Cloud ([https://www.perfecto.io/]()) using Cucumber features, and the page objects pattern.",
+  "scripts": {
+    "perfecto": "wdio ./config/wdio.conf.js"
+  },
+  "keywords": [
+    "webdriverio",
+    "perfecto",
+    "cucumber",
+    "wdio",
+    "automation"
+  ],
+  "author": "Tamil Selvan tamil777selvan@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/cli": "^6.1.11",
+    "@wdio/cucumber-framework": "^6.1.8",
+    "@wdio/local-runner": "^6.1.11",
+    "@wdio/spec-reporter": "^6.1.9",
+    "@wdio/sync": "^6.1.8"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "cucumber": "^6.0.5",
+    "fs": "0.0.1-security",
+    "lodash": "^4.17.15",
+    "path": "^0.12.7"
+  }
+}
