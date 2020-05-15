@@ -12,15 +12,16 @@ Boilerplate project to run WebdriverIO tests in Perfecto Cloud ([https://www.per
 - cucumber (v6)
 
 # Features:
+- Cloud integration with [Perfecto](https://www.perfecto.io/)
 - Supports Page Object Model
 - Contains sample Scenarios written in Declarative style of BDD
 
 ## Running end-to-end tests
 
-- Clone the git repo — git clone `https://github.com/tamil777selvan/wdioV6-Perfecto-Boilerplate.git`.
+- Clone the git repo - `git clone https://github.com/tamil777selvan/wdioV6-Perfecto-Boilerplate.git`.
 
 - Install dependencies with `npm i`.
 
-- Update Device Capabilities and Perfecto Security Token in  `config/perfectoConfig.json`
+- Update Device Capabilities and Perfecto Security Token in `config/perfectoConfig.json`
 
 - Run `npm run perfecto` or `npx wdio ./config/wdio.conf.js` to execute the e2e tests.

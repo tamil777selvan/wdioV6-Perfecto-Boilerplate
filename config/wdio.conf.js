@@ -76,7 +76,8 @@ exports.config = {
     capabilities: [
         {
             maxInstances: 1,
-            platformName: require('./perfectoConfig.json').platform,
+            platformName: require('./perfectoConfig.json').platformName,
+            platformVersion: require('./perfectoConfig.json').platformVersion,
             deviceName: require('./perfectoConfig.json').deviceName,
             securityToken: require('./perfectoConfig.json').securityToken
         }
