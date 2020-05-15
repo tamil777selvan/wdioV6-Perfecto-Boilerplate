@@ -2,7 +2,8 @@
   "hostName": "",
   "port": 80,
   "protocol": "",
-  "platform": "",
+  "platformName": "",
+  "platformVersion": "",
   "deviceName": "",
   "securityToken": ""
 }
