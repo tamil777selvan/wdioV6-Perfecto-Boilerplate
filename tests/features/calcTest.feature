@@ -1,3 +1,4 @@
+@Calc-Addition
 Feature: Calculator
 
   Scenario: Add two numbers

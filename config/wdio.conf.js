@@ -1,3 +1,5 @@
+const {generate} = require('multiple-cucumber-html-reporter');
+
 exports.config = {
     //
     // ====================
@@ -79,7 +81,18 @@ exports.config = {
             platformName: require('./perfectoConfig.json').platformName,
             platformVersion: require('./perfectoConfig.json').platformVersion,
             deviceName: require('./perfectoConfig.json').deviceName,
-            securityToken: require('./perfectoConfig.json').securityToken
+            securityToken: require('./perfectoConfig.json').securityToken,
+            'cjson:metadata': {
+                platform: {
+                    name: require('./perfectoConfig.json').platformName,
+                    version: require('./perfectoConfig.json').platformVersion
+                },
+                device: require('./perfectoConfig.json').deviceName,
+                app: {
+                    name: 'Calculator',
+                    version: '1.0.0'
+                }
+            }
         }
     ],
     //
@@ -148,7 +161,10 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter.html
-    reporters: ['spec'],
+    reporters: ['spec', ['cucumberjs-json', {
+        jsonFolder: './tests/reports/json/',
+        language: 'en'
+    }]],
     //
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
@@ -282,8 +298,14 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {<Object>} results object containing test results
      */
-    // onComplete: function(exitCode, config, capabilities, results) {
-    // },
+    onComplete: function (exitCode, config, capabilities, results) {
+        generate({
+            jsonDir: './tests/reports/json',
+            reportPath: './tests/reports/html',
+            openReportInBrowser: true,
+            disableLog: true
+        });
+    },
     /**
      * Gets executed when a refresh happens.
      * @param {String} oldSessionId session ID of the old session
