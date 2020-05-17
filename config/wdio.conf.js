@@ -298,7 +298,7 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {<Object>} results object containing test results
      */
-    onComplete: function(exitCode, config, capabilities, results) {
+    onComplete: function (exitCode, config, capabilities, results) {
         generate({
             jsonDir: './tests/reports/json',
             reportPath: './tests/reports/html',
