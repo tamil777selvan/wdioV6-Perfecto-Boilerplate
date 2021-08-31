@@ -17,3 +17,7 @@ node_modules/
 
 # Webstrom directories
 .idea
+
+### Execution Reports ###
+# Logs
+tests/reports/
